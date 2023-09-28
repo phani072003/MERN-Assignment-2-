@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 2px;
+            margin: 2px;
+
+        }
+        body{
+            border: 2px solid black;
+            
+            height: 130px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <p>1st Number:<input type="number" id="n1"></p>
+    
+    <p>2nd Number:<input type="number" id="n2"></p>
+
+    <button onclick="multiply()">multiply</button>
+    <button onclick="divide()">divide</button>
+    <p><span id="result"></span></p>
+    <script>
+        function multiply() {
+            const input1=parseFloat(document.getElementById("n1").value);
+            const input2=parseFloat(document.getElementById("n2").value);
+
+            const result=input1*input2;
+
+            document.getElementById("result").textContent=`The Result Is:${result}`;
+        }
+        function divide() {
+            const input1 = parseFloat(document.getElementById("n1").value);
+            const input2 = parseFloat(document.getElementById("n2").value);
+            
+            if (input2 === 0) {
+                alert("Cannot divide by zero.");
+                return;
+            }
+            const result = input1 / input2;
+            document.getElementById("result").textContent = `The Result Is: ${result}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and date</title>
+    <style>
+        *{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="date">Show Date</button>
+    <p id="output1"></p>
+    <br>
+    <button class="time">Show Time</button>
+    <p id="output2"></p>
+
+    <script>
+        const dateButton = document.querySelector('.date');
+        const timeButton = document.querySelector('.time');
+        const outputElement1 = document.getElementById('output1');
+        const outputElement2 = document.getElementById('output2');
+
+        dateButton.addEventListener('click', () => {
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString();
+            outputElement1.textContent = `Date: ${formattedDate}`;
+        });
+
+        timeButton.addEventListener('click', () => {
+            const currentDateTime = new Date();
+            const formattedDateTime = currentDateTime.toLocaleString();
+            outputElement2.textContent = `Date and Time: ${formattedDateTime}`;
+        });
+    </script>
+</body>
+</html>

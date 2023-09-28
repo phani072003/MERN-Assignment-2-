@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #p{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        nav{
+            font-size: 10px;
+        }
+        #middle-img{
+            height: 300px;
+        }
+        body{
+          overflow-y: hidden;
+        }
+        .carousel-caption{
+          padding-bottom: 5.25rem;
+        }
+        p{
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-secondary">
+    <div class="container bg-warning">
+        <div class="row px-4 pt-1">
+            <div class="col-3">
+                <h3><b>Builderz</b></h3>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-2">
+                <div class="d-flex align-items-center">
+                    <img style="width: 18px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUUlEQVR4nO2YO24UQRCGP1jYBFsi4gJk2KcAAkwAa4T2CAQWxhgOwSPkCDwDAkwAF7EBYyCxZQeEhsQOaFTS31azzGt7B6ZnPb9U0kxXd1X9W121tQvVcRXYAZzEnhfGON+0/SOETrxs0x77R/DG895Tt98+IovAXkZ6R2XUUd3iUbbPYh2QgSokUiLigN0sImWpTO1quTz9sSGyk1j7dbFEFmQ4dHJl8vij7btYIqnBdUTalhHXMvkLU0ekLXAdkcTgjn1GXCrFPGlGpo5ICjpDR8R1GaG7Wo58dF3Lde2X6BbLNLTfMvj/4ZIh8jp47wND4CWwCfyUbGptqD2Gc8D7VIg8AU7o+QbwrUIdftXfuwRnGydigZwEHgf71oEVYA44I5nT2nqw75HORhOpQ74DZ2XXkzgAlvKCE3rAbe31ZBolciu4Tp7ExQyfb4G1jPVLAZlB01erH9TEUoTdZem+AKerHooNtkg3DGqiF2G3B2xIf7Pqodhgi3SvtH4n0qdhVfrnNEjks9YvRPo0zEtv3zONEdnX+mxQ2K6i+AYwq/f9GCKTykwOEQuuqo03KRA53/TVqhsv5O9uwR5XEtN96Z+Oc6hu+Pa7MUH7/RDTfutGXwOg09iRhaKYVqTbGvcL8V9gUT4PNHaMYi0o7BCXgUPgF3BtVLlbY0GXyZ5+T6DBz5NZLrhmhlPKxKHOPMjaNPjPZN4FY7wn41Qzq+pIMxJ7vhfUhGXiYcmk3Bjsg7QBsOwDsJq43nSwZbCitQ5ks9Mn4IfkI/BMuj8K2+M38wJ1s8ZffrkAAAAASUVORK5CYII=">
+                    <p class="pt-1" id="p">Opening Hours<br>Mon-FRi,8:00-9:00</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="d-flex align-items-center">
+                    <img style="width: 18px;" src="https://img.icons8.com/ios/50/call-male.png" alt="call-male"/>
+                    <p class="pt-1" id="p">Call us<br>+012 345 6789</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="d-flex align-items-center">
+                    <img style="width: 18px;" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/>
+                    <p class="pt-1" id="p">Email us<br>info@example.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-4 bg-dark">
+            <div class="col-6">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid" style="padding-left: 0px;">
+                      <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link text-warning" href="#">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">ABOUT</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">SERVICE</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">TEAM</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">PROJECT</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              PAGES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CONTACT</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <button class="btn border-white rounded-0 my-2 text-center text-white" type="button" style="width: 81px; height: 25px; font-size: 10px;">Get A Quote</button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide p-0" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ydgclwbvnofxowjczaow/construction-header" class="d-block w-100" alt="image-1" id="middle-img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>We Are Professional</p>
+                        <h1><b>For Your Dream Project</b></h1>
+                        <button class="btn border-white rounded-0 mt-2 text-center text-white" type="button" style="width: 120px; height: 35px; font-size: 15px;">Get A Quote</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.cavendishprofessionals.com/wp-content/uploads/2019/05/Construction-building-min.jpg" class="d-block w-100" alt="image-1" id="middle-img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>We Are Professional</p>
+                        <h1><b>For Your Dream Project</b></h1>
+                        <button class="btn border-white rounded-0 mt-2 text-center text-white" type="button" style="width: 120px; height: 35px; font-size: 15px;">Get A Quote</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://calconstructionlaw.files.wordpress.com/2015/04/construction-e1430103068745.jpg" class="d-block w-100" alt="image-2" id="middle-img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>We Are Professional</p>
+                        <h1><b>For Your Dream Project</b></h1>
+                        <button class="btn border-white rounded-0 mt-2 text-center text-white" type="button" style="width: 120px; height: 35px; font-size: 15px;">Get A Quote</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://websta.me/wp-content/uploads/2021/04/Construction-industry.jpg" class="d-block w-100" alt="image-3" id="middle-img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>We Are Professional</p>
+                        <h1><b>For Your Dream Project</b></h1>
+                        <button class="btn border-white rounded-0 mt-2 text-center text-white" type="button" style="width: 120px; height: 35px; font-size: 15px;">Get A Quote</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-4 bg-dark">
+              <br>
+              <div class="d-flex align-items-center" style="height: 100px;">
+                <img style="width: 60px; height: 60px;" src="data:image/png;base64,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">
+                <p class="text-warning" style="font-size: 10px;"><span style="font-size: 15px;"><b>Expert Worker</b></span><br>Lorem ipsum dolor sit amet <br>elit. Phasus nec pretim ornare <br>veilt non</p>
+              </div>
+            </div>
+            <div class="col-4 bg-warning">
+              <br>
+              <div class="d-flex align-items-center" style="height: 100px;">
+                <img style="width: 60px; height: 60px; padding: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtklEQVR4nO2VQQ6AIAwE+/9PryeuNoAtpc4mHjxInGynmJH7oo+e4xEgRiOlRum4MwLEaCQkcmZ69b2MI21AxNayfzSiqHtIyY4A4oVGNtfv7IiWXb/XgyB7NdlXz3EDyC0XorrIriAQr8kRHFHS1kofrRFArIgj6iK7gkBwpJrsq+e4AWSxkXRH1EV2BYF4TYY78vYzV8muj0DSR2sEEGs+WukgmviZmW/THREgRiPaGS1iB/MAmdNHABZD2NEAAAAASUVORK5CYII=">
+                <p class="text-dark" style="font-size: 10px;"><span style="font-size: 15px;"><b>Quality Work</b></span><br>Lorem ipsum dolor sit amet <br>elit. Phasus nec pretim ornare <br>veilt non</p>
+              </div>
+            </div>
+            <div class="col-4 bg-dark">
+              <br>
+              <div class="d-flex align-items-center" style="height: 100px;">
+                <img style="width: 60px; height: 60px; padding: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0UlEQVR4nO1ZPYgTQRQe/xsLES55LygncqCeCP4VYmMtWll6aG0raKFgZ6d3BtNaWViIcoj4r4TLm9w1gqIn/pWWovhziskbb+TtJSHZbHLJ3lwykf1gYMkOs9+38+a9722USpAgQYL/CiVK72QNV4zGWdY4JyO4JpywBRhVvsLOjq5lDTnWaIxGGzXkHmvI2udqjfKNvNHwpBXxpkHwyCsRrCHXMfnabkBW+RPzrcOmTTixnYEdPrz9bLfkayIIx/vNX7HGN3EFGMLXPgj4uYQd+NFv/kpILEHA937zV1KkBjuECCdi74DGS/3mr8QexE6jRdyufECcVOpFCq1CbIHYgy4EPPDKSgiEkOyEhEa7sAlcqW/km84E4bhkGKkRQZ1YuL7sTcwnSJAggT+wVq0sTad2GQ2nmOCqIXjIGt6zhs+s4Y+d3rSxfr4huNNcI+Cl9NW9I50fWm8IjxsNk6zha7uqGy5aTFiOnKcz23rV/15ngt+d2gabH4IGAS0El4uZg8tG3BZh2BDeYsK/3Zq2ks7s7rB/GFsW8kxwbLEwaes6i+kjIQG3o30SXHNO3mg4HZd4bRBcaFwzfTZ6Ljx2Sl5iMk7IRIy7DesS7mvuDeBLWcN+pwIM4T0H5IPG3d4fWVdd11q1ggk+NhzgAhxSrsGE31wICEQU0kdDL+dcSORF5wJcka8c0Bv1a9v88AbZGVO7j3N2Jr3FXwGEZTuV2Rxa/3zosD+1N9UqLwVENfFyLpjgbWincs4EMMEnx2Ekvmik/hmlYmaP/B4WYfNqtQsBh12LECMXfo4hOMmE843z8Jml1NbqnDKlDkidkGInFVtSvPTXPTWAixVMDolggl/BxwGNY5X/2aJeyAvlC0wBToTDqZOhfEJJzgTBu4EVUM1OkmLr68RACVAVSLGTis0aPrRJzfP95tkRSlO41xCckZ7EEL4Se7/wCRMm/wGxwNvcW3R7aAAAAABJRU5ErkJggg==">
+                <p class="text-warning" style="font-size: 10px;"><span style="font-size: 15px;"><b>24/7 Support</b></span><br>Lorem ipsum dolor sit amet <br>elit. Phasus nec pretim ornare <br>veilt non</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

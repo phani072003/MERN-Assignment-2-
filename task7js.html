@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Animation</title>
+    <style>
+        #myImage {
+            position: relative;
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <img id="myImage" src="https://media.tenor.com/DaGj4jt3_ZsAAAAM/train-steam.gif" alt="Train"/>
+        <p style="color: blue; font-size: large;">Click the buttons below to handle animation</p>
+        <input type="button" value="Start" onclick="moveRight();" />
+        <input type="button" value="Stop" onclick="stop();" />
+    </form>
+
+    <script>
+        let imgObj = null;
+        let animate;
+        let deviceWidth;
+
+        function init() {
+            imgObj = document.getElementById('myImage');
+            imgObj.style.left = '0px';
+            deviceWidth = window.innerWidth;
+        }
+
+        function moveRight() {
+            const currentLeft = parseInt(imgObj.style.left);
+            if (currentLeft + 10 <= deviceWidth - imgObj.clientWidth) {
+                imgObj.style.left = currentLeft + 10 + 'px';
+                animate = setTimeout(moveRight, 20);
+            }
+        }
+
+        function stop() {
+            clearTimeout(animate);
+            imgObj.style.left = '0px';
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
